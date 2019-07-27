@@ -235,9 +235,9 @@ body .container-home .header-section {
 @media (max-width: 800px) {
   body .container-home .header-section {
     display: flex;
-    flex-flow: column-reverse;
-    min-height: 120px;
-    justify-content: center;
+    flex-flow: column;
+    min-height: 100px;
+    justify-content: space-around;
   }
 }
 body .container-home .header-section header {
@@ -254,12 +254,22 @@ body .container-home .header-section header a {
   text-decoration: none;
 }
 body .container-home .header-section .nav-bar-top {
-  width: 50%;
+  min-width: 60%;
   padding: 10px 30px;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
   background-color: #A9A9A9;
+}
+@media (max-width: 800px) {
+  body .container-home .header-section .nav-bar-top {
+    min-width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  body .container-home .header-section .nav-bar-top {
+    min-width: 100%;
+  }
 }
 body .container-home .header-section .nav-bar-top a {
   text-decoration: none;
@@ -301,9 +311,9 @@ body .container-home .home-main-top .home-main-top-content {
 body .container-home .home-main-top .home-main-top-content h3 {
   font-size: 2.6rem;
   width: 200px;
-  position: relative;
-  right: 60px;
   bottom: 3px;
+  display: flex;
+  justify-content: center;
 }
 body .container-home .home-main-mid {
   padding-top: 2vh;
@@ -312,6 +322,10 @@ body .container-home .home-main-mid {
 @media (max-width: 800px) {
   body .container-home .home-main-mid {
     max-width: 80%;
+  }
+  body .container-home .home-main-mid h4 {
+    display: flex;
+    justify-content: center;
   }
 }
 body footer {

@@ -19,9 +19,9 @@ body {
 
       @media @tablet {
         display: flex;
-        flex-flow: column-reverse;
-        min-height: 120px;
-        justify-content: center;
+        flex-flow: column;
+        min-height: 100px;
+        justify-content: space-around;
       }
 
 
@@ -41,12 +41,20 @@ body {
       }
 
       .nav-bar-top {
-        width: 50%;
+        min-width: 60%;
         padding: 10px 30px;
         border-radius: 20px;
         display: flex;
         justify-content: space-around;
         background-color: #A9A9A9;
+
+        @media @tablet {
+          min-width: 70%;
+        }
+
+        @media @mobile {
+          min-width: 100%;
+        }
         
         a {
           text-decoration: none;
@@ -90,9 +98,9 @@ body {
         h3{
           font-size: 2.6rem;
           width: 200px;
-          position: relative;
-          right: 60px;
           bottom: 3px;
+          display: flex;
+          justify-content: center;
         }
       }
     }
@@ -103,6 +111,11 @@ body {
 
       @media @tablet {
         max-width: 80%;
+      
+        h4 {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }
