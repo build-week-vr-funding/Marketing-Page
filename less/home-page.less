@@ -1,6 +1,7 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: silver;
 
   .container-home {
     width: 80%;
@@ -16,19 +17,40 @@ body {
       align-items: center;
       justify-content: space-between;
 
+      @media @tablet {
+        display: flex;
+        flex-flow: column-reverse;
+        min-height: 120px;
+        justify-content: center;
+      }
+
 
       header {
-        color: orange;
+        min-height: 40px;
+        padding: 0px 10px 0px 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: royalblue;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
       }
 
       .nav-bar-top {
         width: 50%;
+        padding: 10px 30px;
+        border-radius: 20px;
         display: flex;
         justify-content: space-around;
+        background-color: #A9A9A9;
         
         a {
           text-decoration: none;
-          color: green;
+          color: royalblue;
         }
       }
     }
@@ -38,6 +60,12 @@ body {
       display: flex;
       justify-content: space-between;
       min-height: 30vh;
+
+      @media @tablet {
+        flex-direction: column;
+        align-items: center;
+        min-width: 70%;
+      }
 
       img {
         min-width: 500px;
@@ -53,6 +81,12 @@ body {
         flex-direction: column;
         align-items: center;
 
+        @media @tablet {
+          min-width: 80%;
+          position: relative;
+          bottom: 20px;
+        }
+
         h3{
           font-size: 2.6rem;
           width: 200px;
@@ -66,6 +100,14 @@ body {
     .home-main-mid {
       padding-top: 2vh;
       width: 100%;
+
+      @media @tablet {
+        max-width: 80%;
+      }
     }
+  }
+
+  footer {
+    padding: 40px 0px 30px 0px;
   }
 }
