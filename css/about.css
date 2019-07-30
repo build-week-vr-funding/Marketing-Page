@@ -217,7 +217,7 @@ img {
   }
 }
 body {
-  background: url(images/matrix-356024_1920.jpg);
+  background-image: url("images/matrix-356024_1920.jpg");
   height: 100%;
 }
 .header {
