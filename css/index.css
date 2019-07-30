@@ -216,7 +216,7 @@ img {
 body {
   display: flex;
   justify-content: center;
-  background-color: silver;
+  background-color: #222629;
 }
 body .container-home {
   width: 80%;
@@ -224,6 +224,7 @@ body .container-home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #6B6E70;
 }
 body .container-home .header-section {
   min-width: 80%;
@@ -247,23 +248,24 @@ body .container-home .header-section header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: royalblue;
+  background-color: #474B4F;
+  min-width: 20%;
 }
 body .container-home .header-section header a {
-  color: white;
+  color: #86C232;
   text-decoration: none;
 }
 body .container-home .header-section .nav-bar-top {
-  min-width: 60%;
+  min-width: 65%;
   padding: 10px 30px;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
-  background-color: #A9A9A9;
+  background-color: #474B4F;
 }
 @media (max-width: 800px) {
   body .container-home .header-section .nav-bar-top {
-    min-width: 70%;
+    min-width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -273,7 +275,7 @@ body .container-home .header-section .nav-bar-top {
 }
 body .container-home .header-section .nav-bar-top a {
   text-decoration: none;
-  color: royalblue;
+  color: #61892F;
 }
 body .container-home .home-main-top {
   width: 100%;
@@ -314,10 +316,14 @@ body .container-home .home-main-top .home-main-top-content h3 {
   bottom: 3px;
   display: flex;
   justify-content: center;
+  color: white;
 }
 body .container-home .home-main-mid {
   padding-top: 2vh;
   width: 100%;
+}
+body .container-home .home-main-mid h4 {
+  color: white;
 }
 @media (max-width: 800px) {
   body .container-home .home-main-mid {
