@@ -216,6 +216,17 @@ img {
     display: inherit;
   }
 }
+@keyframes floatingText {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: 2%;
+  }
+  100% {
+    left: 0%;
+  }
+}
 body {
   display: flex;
   justify-content: center;
@@ -248,9 +259,13 @@ body .container-home .header-section header {
   padding: 0px 10px 0px 10px;
   border-radius: 10px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   background-color: #474B4F;
+  animation-name: floatingText;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 body .container-home .header-section header a {
   color: #61892F;

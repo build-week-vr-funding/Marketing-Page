@@ -1,3 +1,9 @@
+@keyframes floatingText {
+  0% {left: 0%;}
+  50% {left: 2%;}
+  100% {left: 0%;}
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -30,9 +36,13 @@ body {
         padding: 0px 10px 0px 10px;
         border-radius: 10px;
         display: flex;
+        position: relative;
         align-items: center;
         justify-content: center;
         background-color: @medium-dark;
+        animation-name: floatingText;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
 
         a {
           color: @dark-green;
