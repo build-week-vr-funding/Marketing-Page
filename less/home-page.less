@@ -1,7 +1,7 @@
-@keyframes floatingText {
-  0% {left: 0%;}
-  50% {left: 2%;}
-  100% {left: 0%;}
+@keyframes slidingText {
+  0% {left: -1%;}
+  50% {left: 1%;}
+  100% {left: -1%;}
 }
 
 body {
@@ -40,7 +40,7 @@ body {
         align-items: center;
         justify-content: center;
         background-color: @medium-dark;
-        animation-name: floatingText;
+        animation-name: slidingText;
         animation-iteration-count: infinite;
         animation-duration: 2s;
 
