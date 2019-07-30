@@ -216,15 +216,15 @@ img {
     display: inherit;
   }
 }
-@keyframes floatingText {
+@keyframes slidingText {
   0% {
-    left: 0%;
+    left: -1%;
   }
   50% {
-    left: 2%;
+    left: 1%;
   }
   100% {
-    left: 0%;
+    left: -1%;
   }
 }
 body {
@@ -263,7 +263,7 @@ body .container-home .header-section header {
   align-items: center;
   justify-content: center;
   background-color: #474B4F;
-  animation-name: floatingText;
+  animation-name: slidingText;
   animation-iteration-count: infinite;
   animation-duration: 2s;
 }
