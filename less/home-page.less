@@ -4,6 +4,18 @@
   100% {left: -1%;}
 }
 
+@keyframes clickSelector {
+  0% {
+    color: white;
+    font-size: 1.8rem;
+  }
+
+  100% {
+    color: @dark-green;
+    font-size: 2rem;
+  }
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -58,6 +70,11 @@ body {
         justify-content: space-around;
         background-color: @medium-dark;
 
+        a {
+          text-decoration: none;
+          color: @dark-green;
+        }
+
         @media @tablet {
           min-width: 70%;
         }
@@ -66,9 +83,9 @@ body {
           min-width: 100%;
         }
         
-        a {
-          text-decoration: none;
-          color: @dark-green;
+        a:hover {
+          animation-name: clickSelector;
+          animation-duration: .6s;
         }
       }
     }
@@ -137,8 +154,57 @@ body {
     }
   }
 
+  .home-main-bot {
+    color: @light-dark;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    .on-board-form {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .on-board-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        
+        h5 {
+          color: @light-dark;
+          padding-bottom: 5px;
+          padding-top: 7px;
+        }
+
+        input {
+          width: 100%;
+        }
+
+        .btn-parent {
+          display: flex;
+          justify-content: center;
+
+          .on-board-submit {
+            margin-top: 10px; 
+            width: 40%;
+            font-size: 1.4rem;
+            border-radius: 20px;
+            background-color: @light-dark;
+            border-color: @light-dark;
+          }
+        }
+      }
+    }
+  }
+
   footer {
-    padding: 40px 0px 30px 0px;
+    font-size: 1.6rem;
+    display: flex;
+    padding: 90px 0px 30px 0px;
     color: @medium-dark;
+    width: 100%;
+    justify-content: center;
   }
 }
