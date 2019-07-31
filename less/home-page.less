@@ -135,7 +135,7 @@ body {
     }
 
     .home-main-mid {
-      padding-top: 2vh;
+      padding-top: 4vh;
       width: 100%;
       color: @light-dark;
 
@@ -145,33 +145,38 @@ body {
 
       @media @tablet {
         max-width: 80%;
-      
-        h4 {
-          display: flex;
-          justify-content: center;
-        }
       }
     }
   }
 
   .home-main-bot {
+    margin-top: 4vh;
     color: @light-dark;
-    width: 50%;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     color: white;
+
+    .on-board-img {
+      
+      img {
+        width: 80%;
+      }
+    }
 
     .on-board-form {
       display: flex;
-      align-items: center;
       flex-direction: column;
+      
+      h2 {
+        width: 75%;
+      }
 
       .on-board-info {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         width: 60%;
-        
+
         h5 {
           color: @light-dark;
           padding-bottom: 5px;

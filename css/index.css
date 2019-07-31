@@ -350,7 +350,7 @@ body .container-home .home-main-top .home-main-top-content h3 {
   color: white;
 }
 body .container-home .home-main-mid {
-  padding-top: 2vh;
+  padding-top: 4vh;
   width: 100%;
   color: #6B6E70;
 }
@@ -361,27 +361,28 @@ body .container-home .home-main-mid h4 {
   body .container-home .home-main-mid {
     max-width: 80%;
   }
-  body .container-home .home-main-mid h4 {
-    display: flex;
-    justify-content: center;
-  }
 }
 body .home-main-bot {
+  margin-top: 4vh;
   color: #6B6E70;
-  width: 50%;
+  width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   color: white;
+}
+body .home-main-bot .on-board-img img {
+  width: 80%;
 }
 body .home-main-bot .on-board-form {
   display: flex;
-  align-items: center;
   flex-direction: column;
+}
+body .home-main-bot .on-board-form h2 {
+  width: 75%;
 }
 body .home-main-bot .on-board-form .on-board-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 60%;
 }
 body .home-main-bot .on-board-form .on-board-info h5 {
