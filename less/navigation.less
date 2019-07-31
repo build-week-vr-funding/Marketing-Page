@@ -1,9 +1,22 @@
 // Navigation Styles here
 
-.primary-nav {
+.logo .nav-box {
+    .flex(row nowrap, flex-end);
     width: 60%;
-    .flex(row nowrap);
-    font-size: 1.6 rem;
+    border: 1pt, @light-dark;
+    border-radius: 50px;
+    background-color: @light-dark;
+}
+
+.primary-nav {
+    // width: 30%;
+    // text-align: right;
+    .flex(row nowrap, space-evenly);
+    a{
+        color: @dark-green;
+        text-decoration: none;
+        font-size:1.8rem;
+    }
     @media @mobile {
         .flex(column nowrap);
     }
@@ -11,9 +24,10 @@
         display: inline-block;
         width: 40%;
     }
-    // nav {
-    //     .flex(row nowrap, space-evenly);
-    //     width: 40%;
-    //     text-align: right;
-    // }
+    nav {
+        .flex(row nowrap, space-evenly);
+        width: 40%;
+        text-align: right;
+
+    }
 }
