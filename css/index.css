@@ -230,11 +230,13 @@ img {
 @keyframes clickSelector {
   0% {
     color: white;
-    font-size: 1.8rem;
+    position: relative;
+    bottom: 2px;
   }
   100% {
     color: #61892F;
-    font-size: 2rem;
+    position: relative;
+    bottom: -1px;
   }
 }
 body {
@@ -255,6 +257,7 @@ body .container-home .header-section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0.5vh 0vh 2vh 0vh;
 }
 @media (max-width: 800px) {
   body .container-home .header-section {
@@ -282,16 +285,29 @@ body .container-home .header-section header a {
   text-decoration: none;
 }
 body .container-home .header-section .nav-bar-top {
-  min-width: 60%;
+  min-width: 65%;
+  font-size: 1.8rem;
   padding: 10px 30px;
   border-radius: 20px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   background-color: #474B4F;
 }
 body .container-home .header-section .nav-bar-top a {
   text-decoration: none;
   color: #61892F;
+  padding: 0px 20px;
+}
+@media (max-width: 800px) {
+  body .container-home .header-section .nav-bar-top a {
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 500px) {
+  body .container-home .header-section .nav-bar-top a {
+    padding: 0px 9px;
+  }
 }
 @media (max-width: 800px) {
   body .container-home .header-section .nav-bar-top {
@@ -305,7 +321,7 @@ body .container-home .header-section .nav-bar-top a {
 }
 body .container-home .header-section .nav-bar-top a:hover {
   animation-name: clickSelector;
-  animation-duration: 0.6s;
+  animation-duration: 0.8s;
 }
 body .container-home .home-main-top {
   width: 100%;
