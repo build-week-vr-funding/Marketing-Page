@@ -403,7 +403,6 @@ body .home-main-bot {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    border: 1px solid red;
   }
 }
 body .home-main-bot .on-board-img img {
@@ -418,7 +417,6 @@ body .home-main-bot .on-board-img img {
 body .home-main-bot .on-board-form {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   align-items: center;
 }
 body .home-main-bot .on-board-form h2 {
