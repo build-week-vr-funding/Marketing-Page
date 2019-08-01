@@ -17,15 +17,17 @@
     }
   }
   .mobile-footer {
-    display: none;
+    visibility: hidden;
   }
 }
 
 @media @mobile {
-.primary-footer .main-footer {
+  .primary-footer{
+.main-footer {
   display:none;
-  .mobile-footer{
-    display: inherit;
-  }
+}
+.mobile-footer{
+  visibility: initial;
+}
 }
 }
